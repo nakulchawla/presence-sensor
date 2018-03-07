@@ -7,12 +7,7 @@ var userRouter = require('./routers/user');
 var http = require('http');
 //
 // var app = express();
-var server = http.createServer(function(request, response) {
-
-    response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Hello World!  hello");
-
-});
+var server = http.createServer(app);
 
 
 
