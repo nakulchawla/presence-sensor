@@ -1,12 +1,12 @@
-
-var express = require('express');
-var mongoose = require('mongoose');
-var bodyParser = require('body-parser');
-var roomRouter = require('./routers/room');
-var userRouter = require('./routers/user');
+//
+// var express = require('express');
+// var mongoose = require('mongoose');
+// var bodyParser = require('body-parser');
+// var roomRouter = require('./routers/room');
+// var userRouter = require('./routers/user');
 var http = require('http');
 //
-var app = express();
+// var app = express();
 var server = http.createServer(function(request, response) {
 
     response.writeHead(200, {"Content-Type": "text/plain"});
@@ -44,14 +44,14 @@ var server = http.createServer(function(request, response) {
 //   process.exit(1);
 // });
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
-
-
-app.use('/api', roomRouter);
-app.use('/api', userRouter);
+// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({
+//   extended: true
+// }));
+//
+//
+// app.use('/api', roomRouter);
+// app.use('/api', userRouter);
 
 var port = process.env.PORT || 1337;
 server.listen(port);
