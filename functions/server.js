@@ -6,7 +6,7 @@ var roomRouter = require('./routers/room');
 var userRouter = require('./routers/user');
 var http = require('http');
 //
-// var app = express();
+var app = express();
 var server = http.createServer(app);
 
 
