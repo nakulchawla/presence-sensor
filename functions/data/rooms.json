@@ -1,0 +1,30 @@
+[
+  {
+    "id": 3,
+    "name": "Winterfell",
+    "floor": 5,
+    "capacity": 4,
+    "calendarId": "quovantis.com_2d3335323438363337343334@resource.calendar.google.com"
+  },
+  {
+    "id": 4,
+    "name": "Riverrun",
+    "floor": 5,
+    "capacity": 4,
+    "calendarId": "quovantis.com_2d3638343137383638353532@resource.calendar.google.com"
+  },
+  {
+    "id": 1,
+    "name": "Zion",
+    "floor": 4,
+    "capacity": 8,
+    "calendarId": "quovantis.com_3532343632333836323637@resource.calendar.google.com"
+  },
+  {
+    "id": 2,
+    "name": "The Shire",
+    "floor": 4,
+    "capacity": 8,
+    "calendarId": "quovantis.com_31363338333731362d343236@resource.calendar.google.com"
+  }
+]
