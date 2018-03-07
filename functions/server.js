@@ -18,40 +18,40 @@ var server = http.createServer(function(request, response) {
 
 
 
-// var HOST_NAME = 'localhost';
-// var DATABASE_NAME = 'presencesensor';
-// var PRIMARY_MASTER_KEY = 'eeA5Y70slx4gyLu51OhTN5c84YcwC46J3uDHkqWhHCJiGwIOiTO6cbr81SIjQ0cLaFtFfBDVmxHdvlw66JGHxQ=='
-//
-// var mongoUri = 'mongodb://' + DATABASE_NAME + ':' +
-//                 encodeURIComponent(PRIMARY_MASTER_KEY) + '@' + DATABASE_NAME +
-//                 '.documents.azure.com:10255/?ssl=true&replicaSet=globaldb';
-// mongoose.connect(mongoUri, function (err) {
-//                   if (err) {
-//                     console.log('Mongoose connect error: ' + err);
-//                     //  process.exit(1);
-//                   }else {
-//
-//
-//                     // app.listen(PORT, function () {
-//                     //   console.log('Listening on port ' + PORT);
-//                     // });
-//                   }
-//
-//                 })
-//
-// mongoose.connection.on('error',function (err) {
-//   console.log('Mongoose default connection error: ' + err);
-//   process.exit(1);
-// });
+var HOST_NAME = 'localhost';
+var DATABASE_NAME = 'presencesensor';
+var PRIMARY_MASTER_KEY = 'eeA5Y70slx4gyLu51OhTN5c84YcwC46J3uDHkqWhHCJiGwIOiTO6cbr81SIjQ0cLaFtFfBDVmxHdvlw66JGHxQ=='
 
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({
-//   extended: true
-// }));
-//
-//
-// app.use('/api', roomRouter);
-// app.use('/api', userRouter);
+var mongoUri = 'mongodb://' + DATABASE_NAME + ':' +
+                encodeURIComponent(PRIMARY_MASTER_KEY) + '@' + DATABASE_NAME +
+                '.documents.azure.com:10255/?ssl=true&replicaSet=globaldb';
+mongoose.connect(mongoUri, function (err) {
+                  if (err) {
+                    console.log('Mongoose connect error: ' + err);
+                    //  process.exit(1);
+                  }else {
+
+
+                    // app.listen(PORT, function () {
+                    //   console.log('Listening on port ' + PORT);
+                    // });
+                  }
+
+                })
+
+mongoose.connection.on('error',function (err) {
+  console.log('Mongoose default connection error: ' + err);
+  process.exit(1);
+});
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
+
+
+app.use('/api', roomRouter);
+app.use('/api', userRouter);
 
 var port = process.env.PORT || 1337;
 server.listen(port);
