@@ -1,16 +1,16 @@
-//
-// var express = require('express');
-// var mongoose = require('mongoose');
-// var bodyParser = require('body-parser');
-// var roomRouter = require('./routers/room');
-// var userRouter = require('./routers/user');
+
+var express = require('express');
+var mongoose = require('mongoose');
+var bodyParser = require('body-parser');
+var roomRouter = require('./routers/room');
+var userRouter = require('./routers/user');
 var http = require('http');
 //
 // var app = express();
 var server = http.createServer(function(request, response) {
 
     response.writeHead(200, {"Content-Type": "text/plain"});
-    response.end("Hello World!  jnjnjn");
+    response.end("Hello World!  hello");
 
 });
 
