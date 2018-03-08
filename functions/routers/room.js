@@ -5,7 +5,7 @@ var roomRouter = express.Router();
 const { check, validationResult } = require('express-validator/check');
 
 roomRouter
-  .route('/v1/rooms')
+  .route('/v1/room')
   .get(function(request, response){
     console.log('GET /rooms');
 
