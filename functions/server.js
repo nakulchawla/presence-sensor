@@ -10,9 +10,6 @@ var app = express();
 var server = http.createServer(app);
 
 
-
-
-
 var HOST_NAME = 'localhost';
 var DATABASE_NAME = 'presencesensor';
 var PRIMARY_MASTER_KEY = 'eeA5Y70slx4gyLu51OhTN5c84YcwC46J3uDHkqWhHCJiGwIOiTO6cbr81SIjQ0cLaFtFfBDVmxHdvlw66JGHxQ=='
