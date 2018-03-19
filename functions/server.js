@@ -11,8 +11,8 @@ var server = http.createServer(app);
 
 
 var HOST_NAME = 'localhost';
-var DATABASE_NAME = 'presencesensor';
-var PRIMARY_MASTER_KEY = 'eeA5Y70slx4gyLu51OhTN5c84YcwC46J3uDHkqWhHCJiGwIOiTO6cbr81SIjQ0cLaFtFfBDVmxHdvlw66JGHxQ=='
+var DATABASE_NAME = 'roomsensor';
+var PRIMARY_MASTER_KEY = 'BbycxkefgTMU5Q9zUe0DMWqAzcmdK6uSAAApwA0cNreF4VsP52uS83JSe5F8JKvjXzmnYv28PIIdYcUZ7B3yVA=='
 
 var mongoUri = 'mongodb://' + DATABASE_NAME + ':' +
                 encodeURIComponent(PRIMARY_MASTER_KEY) + '@' + DATABASE_NAME +
